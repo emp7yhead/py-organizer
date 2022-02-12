@@ -17,7 +17,7 @@ test:
 	@poetry run pytest
 
 test-coverage-report:
-	@poetry run pytest --cov=py-organizer --cov-report xml
+	@poetry run pytest --cov=py_organizer --cov-report xml
 
 test-coverage:
-	@poetry run pytest --cov=py-organizer
+	@poetry run pytest --cov=py_organizer
