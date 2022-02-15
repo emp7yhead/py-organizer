@@ -2,8 +2,6 @@
 import argparse
 import os
 
-DEFAULT_DIR = os.getcwd()
-
 
 def parse_arguments():
     """
@@ -32,7 +30,9 @@ def parse_arguments():
     )
     parser.add_argument(
         'dir',
-        default=DEFAULT_DIR,
+        nargs='?',
+        const=os.getcwd(),
+        default=os.getcwd(),
         help='directory to organize',
         type=str,
     )
