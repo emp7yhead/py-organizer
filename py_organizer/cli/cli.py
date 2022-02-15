@@ -20,7 +20,7 @@ def parse_arguments():
         '-v',
         '--version',
         action='version',
-        version='py-organizer 0.1.0',
+        version='py-organizer 0.2.0',
     )
     parser.add_argument(
         '-h',
@@ -33,7 +33,7 @@ def parse_arguments():
         nargs='?',
         const=os.getcwd(),
         default=os.getcwd(),
-        help='directory to organize',
+        help='directory to organize, default - current directory',
         type=str,
     )
     args = parser.parse_args()
