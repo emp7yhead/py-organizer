@@ -2,9 +2,11 @@
 import os
 import shutil
 from contextlib import suppress
+from time import sleep
 
 from alive_progress import alive_bar
 
+DELAY = 0.01
 OTHER_FORMATS = 'other'
 FOLDER_TEMPLATES = {  # noqa: WPS407
     '.jpg': 'images',
@@ -29,6 +31,7 @@ def move_all_files_in_dir(source_folder: str) -> None:
                 file_in_dir,
                 )
             move_file(file_to_move, destination)
+            sleep(DELAY)
             move_bar()
 
 
