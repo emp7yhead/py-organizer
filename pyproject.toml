@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "py-organazer"
-version = "0.1.0"
+version = "0.2.0"
 description = "CLI utilite for organizing files in folder."
 authors = ["emp7yhead <artyomkropp@gmail.com>"]
 packages = [
